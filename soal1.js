@@ -1,5 +1,5 @@
 // Ubah input draft dan crew dibawah
-var emptyShip = new Ship(15, 10);
+var emptyShip = new Ship(20, 10);
 
 function Ship(draft, crew) {
     this.draft = draft;
