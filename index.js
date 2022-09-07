@@ -1,28 +1,32 @@
 // // Challenge 3
-// Nomer 1
+// Nomer 1 -------------------------------------------------------------
 
 // Ubah input draft dan crew dibawah
-var emptyShip = new Ship(21, 15);
+var emptyShip = new Ship(15, 10);
 
 function Ship(draft, crew) {
     this.draft = draft;
     this.crew = crew;
 
-    crew = 1.5 * draft;
-    // hitung = draft - crew * 1,5;
+    draftCrew = 1.5 * crew;
 
     if (draft > 20) {
-        console.log("Banyak Nih Muatan Kapalnya")
+        console.log("Banyak Nih Muatan Kapalnya.")
     } else if (draft <= 20) {
-        if (draft > crew) {
-            console.log("Banyak Nih Muatan Kapalnya")
-        } else if (draft < crew) {
-            console.log("Lebih Banyak Muatan Orangnya")
+        if (draft > draftCrew) {
+            console.log("Banyak Nih Muatan Kapalnya.")
+        } else if (draft < draftCrew) {
+            console.log("Lebih Banyak Muatan Orangnya.")
+        } else if (draft === draftCrew) {
+            console.log("Muatan Kapal dan Orang Sama Berat.")
+        } else {
+            "Error: Input correct value"
         }
     }
 }
+// Nomer 1 END -------------------------------------------------------------
 
-// Nomer 2
+// Nomer 2 -------------------------------------------------------------
 class Animal {
     constructor(name, age, legs, species, status) {
         this.name = name;
@@ -86,3 +90,4 @@ const hewanAnjing = new Dog('Anjing', 7, 4, 'Dog', 'Berjalan', 'Ahmad Zuhair Riz
 console.log(hewanAnjing)
 console.log(hewanAnjing.introduce())
 console.log(hewanAnjing.GreetMaster())
+// Nomer 2 END -------------------------------------------------------------
